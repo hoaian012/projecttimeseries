@@ -14,4 +14,11 @@
 
 - select_cp(result): lựa chọn cổ phiếu dựa trên kết quả mô hình đã chọn
 
-## Các bước tiến hành chạy mô hình theo dự án
+## Các bước tiến hành chạy mô hình theo dự án:
+- B1: Thu thập dữ liệu, có thể thôn qua việc download data trên các website chứng khoán
+  
+- B2: Xử lý dữ liệu, đưa các dữ liệu về đúng kiểu float, set ngày là index theo ngày (theo tần suất ngày làm việc)
+
+- B3: Chạy mô hình modelar, modelma, arima, auto arima để ra các kết quả mô hình
+
+- B4: Chạy hàm select_cp để lựa chọn các cổ phiếu theo tiêu chí đề ra từ các kết quả mô hình
